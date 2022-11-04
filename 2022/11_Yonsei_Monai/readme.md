@@ -15,6 +15,7 @@ $ squeue -u $USER
 ### Step4. kill if the zombie process 
 ```
 $scancel jobid
+$scancel -u $USER
 ```
 
 ### Step5. submit the job
