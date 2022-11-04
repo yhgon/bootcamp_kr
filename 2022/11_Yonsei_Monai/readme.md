@@ -12,7 +12,7 @@ https://axis-raplabhackathon.axisportal.io
 $ squeue -u $USER
 ```
 
-### Step4. kill if the zombie process 
+### Step4. kill if the zombie processes are  existing ( if not, omit it) 
 ```
 $scancel jobid
 ```
