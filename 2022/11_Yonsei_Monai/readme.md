@@ -22,7 +22,7 @@ $scancel -u $USER
 
 ### Step5. submit the job
 ```
-$ sbatch   /home/hryu-nvidia.com/script_monailabel   you_own_hashnumber
+$   sbatch /launch_scripts/monailabel_launch.sh   you_own_hashnumber
 ```
 
 wait 5~10 minutes 
