@@ -174,6 +174,11 @@ all script is in *`/scratch/kedu49/img_org/`*
  - `tf2.sif` : singularity image for tensorflow and keras
  
  
+## DLI X Lab for KSCSE
+ - site : [courses.nvidia.com/dli-event](courses.nvidia.com/dli-event)
+ - Code : KISTI_DLIXLAB_DR22
+ - dashboard : [https://courses.nvidia.com/dashboard](https://courses.nvidia.com/dashboard)
+ - contents : [https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/](https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/)
 
 
 # Day2. multi node DL training 
