@@ -205,9 +205,9 @@ or
 ```
 sh /scratch/kedu49/img_org/Miniconda3-latest-Linux-x86_64.sh
 ```
-<B> caution !!!</B>
+#### caution !!! (during install)
   -- `enter` to see license
-  -- space skip to read license
+  -- `space` skip to read license
   -- `yes` to accept license
   -- `/scratch/kedu##/miniconda3` for prefix directory  
   -- `yes` for init 
