@@ -8,12 +8,24 @@
 
 ## access neuron
 ssh access via any terminal such as windows command , putty, MobaXterm, Xshell, WSL2 Ubuntu.  
+ - user id : kedu01-kedu45 
 ``` 
 $ ssh your_id@neuron.ksc.re.kr 
-OTP(password) :
-password : 
+OTP(password) : check handout
+password :    check handout
 ```
 data movement  : use data movement node with winscp for scp
+
+## home folder and scratch folder
+KISTI neuron system have `HOME` directory and `/scratch` directory.
+there are quota and limit for HOME directory. make your own directory.  
+all directory would be reset before event. 
+```
+$ mkdir -p /scratch/$USER
+$ mkdir -p /scratch/$USER/tmp
+$ mkdir -p /scratch/$USER/.cache
+$ mkdir -p /scratch/$USER/img
+```
 
 ## environment modules
 environment modules package provides for the dynamics modification of a user's environment via modulefiles. 
@@ -28,15 +40,6 @@ module list
 module purge
 ```
 
-## home folder and scratch folder
-KISTI neuron system have `HOME` directory and `/scratch` directory.
-there are quota and limit for HOME directory. make your own directory.  
-```
-$ mkdir -p /scratch/$USER
-$ mkdir -p /scratch/$USER/tmp
-$ mkdir -p /scratch/$USER/.cache
-$ mkdir -p /scratch/$USER/img
-```
 
 ## singularity 
 kisti already provide singularity module you can load singularity 
@@ -161,6 +164,17 @@ ssh -L localhost:8888:${SERVER}:${PORT} ${USER}@neuron.ksc.re.kr
 
 
 # Day1. AI Turorial 
+
+all script is in *`/scratch/kedu49/img_org/`*
+ - `download_content.sh` : script to download for day1 contents
+ - `download_day1.sh` : same script to download for day1 contents
+ - `download_day2.sh` : script to download for day2 contents from Dr. Hwang's github
+ - `/scratch/kedu49/job.sh` : script to launch the jupyter with singularity image it include download script
+ - `pytorch.sif` : singularity image for pytorch job
+ - `tf2.sif` : singularity image for tensorflow and keras
+ 
+ 
+
 
 # Day2. multi node DL training 
 [Dr. Hwang's github](https://github.com/hwang2006/KISTI-DL-tutorial-using-horovod)
