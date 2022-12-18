@@ -179,3 +179,86 @@ all script is in *`/scratch/kedu49/img_org/`*
 # Day2. multi node DL training 
 [Dr. Hwang's github](https://github.com/hwang2006/KISTI-DL-tutorial-using-horovod)
 
+## conda environment (CentOS) 
+
+### step1. start in scratch folder
+```
+cd /scratch/$USER
+```
+
+### step2. download miniconda   
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
+```
+or you can use pre-downloaded file in 
+```
+/scratch/kedu49/Miniconda3-latest-Linux-x86_64.sh
+```
+
+### step3. launch conda install script 
+
+```
+sh /scratch/$USER/Miniconda3-latest-Linux-x86_64.sh
+```
+or 
+
+```
+sh /scratch/kedu49/img_org/Miniconda3-latest-Linux-x86_64.sh
+```
+<B> caution !!!</B>
+  -- `enter` to see license
+  -- space skip to read license
+  -- `yes` to accept license
+  -- `/scratch/kedu##/miniconda3` for prefix directory  
+  -- `yes` for init 
+  
+### step4. configure conda 
+
+get bashrc profile 
+```
+source ~/.bashrc 
+```
+```
+conda config --set auto_activate_base false
+```
+check location and version of installed conda 
+```
+which conda && conda --version
+```
+
+### step5. configure CUDA related tools
+configure 
+```
+module load gcc/10.2.0 cuda/11.4 cudampi/openmpi-4.1.1 cmake/3.16.9
+```
+
+### step6. create new horovod conda environmnet 
+```
+conda create -n horovod
+```
+### step7. activate horovod conda environment
+
+```
+conda activate horovod
+```
+
+### step8. install pytorch 
+```
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
+```
+
+### step9. install tensorflow 
+
+```
+pip install tensorflow-gpu==2.10.0
+```
+### step10. install horovod
+
+```
+HOROVOD_GPU_OPERATIONS=NCCL HOROVOD_WITH_TENSORFLOW=1 HOROVOD_WITH_PYTORCH=1 HOROVOD_WITH_MPI=1 HOROVOD_WITH_GLOO=1 pip install --no-cache-dir horovod
+```
+
+### step11. check horovod 
+```
+horovodrun -cb
+```
