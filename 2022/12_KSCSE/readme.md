@@ -174,14 +174,27 @@ all script is in *`/scratch/kedu49/img_org/`*
  - `tf2.sif` : singularity image for tensorflow and keras
  
  
-## DLI X Lab for KSCSE
+# DLI X Lab for KSCSE
  - site : [courses.nvidia.com/dli-event](courses.nvidia.com/dli-event)
  - Code : KISTI_DLIXLAB_DR22
  - dashboard : [https://courses.nvidia.com/dashboard](https://courses.nvidia.com/dashboard)
  - contents : [https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/](https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/)
 
+# slack channel  
+ - step1. [nv-ai-developer-kr](https://join.slack.com/t/nv-ai-developer-kr/shared_invite/zt-1l2jvw14y-KsO48FuCTQY~RIOH0FIWEw)
+ - step2. join  `kscse-ai-bootcamp` channel
+ - step3. leave message or question. 
 
-# Day2. multi node DL training 
+# survey
+we will send the gift after launch DLI X Lab and remain the survey
+[google form](https://forms.gle/aZdH3Rj7CfBLAAWw9)
+
+# Day2. DLI self paced lab by Dr.Yeji Choi
+- login : [`courses.nvidia.com`](https://courses.nvidia.com/dashboard) 
+- select [Disaster Risk Monitoring Using Satellite Imagery](https://courses.nvidia.com/courses/course-v1:DLI+S-ES-01+V1/)
+- follow instructor's guide 
+
+# Day2. multi node DL training by Dr. Hwang
 [Dr. Hwang's github](https://github.com/hwang2006/KISTI-DL-tutorial-using-horovod)
 
 ## conda environment (CentOS) 
