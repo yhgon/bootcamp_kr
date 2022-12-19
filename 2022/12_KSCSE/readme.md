@@ -4,6 +4,40 @@
 ### 2022년 12월 19일(월)~21일(수) 
 ### 하이원리조트 마운틴 프라자 3층 원추리홀
 
+-------------------------------------------------------------------------------------------------------------------------
+# slack channel  
+ - step1. [nv-ai-developer-kr](https://join.slack.com/t/nv-ai-developer-kr/shared_invite/zt-1l2jvw14y-KsO48FuCTQY~RIOH0FIWEw)
+ - step2. join  `kscse-ai-bootcamp` channel
+ - step3. leave message or question. 
+
+# survey
+we will send the gift after your reply the survey after finish the day1 course.
+[google form](https://forms.gle/aZdH3Rj7CfBLAAWw9)
+
+# Day1. Introduction to AI for Scientists by Hyungon Ryu ( NVAITC ) 
+ - contents : https://github.com/yhgon/bootcamp_kr/edit/main/2022/12_KSCSE
+ - server : KISTI neuron system 
+ - access guide : hands-out 
+ 
+# DLI X Lab for KSCSE
+ - site : [courses.nvidia.com/dli-event](courses.nvidia.com/dli-event)
+ - activation code Code : `KISTI_DLIXLAB_DR22` only for today
+ - dashboard : [https://courses.nvidia.com/dashboard](https://courses.nvidia.com/dashboard) to reaccess
+ - contents : [https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/](https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/)
+
+# Day2. DLI self paced lab by Dr.Yeji Choi (SIA)
+- login : [`courses.nvidia.com`](https://courses.nvidia.com/dashboard) 
+- select `Disaster Risk Monitoring Using Satellite Imagery` course or 
+- visit [https://courses.nvidia.com/courses/course-v1:DLI+S-ES-01+V1](https://courses.nvidia.com/courses/course-v1:DLI+S-ES-01+V1/) 
+- follow instructor's guide 
+
+# Day2. multi node DL training by Dr. Soonwook Hwang (KISTI)
+[Dr. Hwang's github](https://github.com/hwang2006/KISTI-DL-tutorial-using-horovod)
+
+
+
+
+
 # DevOps. KISTI Neuron system
 
 ## access neuron
@@ -173,31 +207,6 @@ all script is in *`/scratch/kedu49/img_org/`*
  - `pytorch.sif` : singularity image for pytorch job
  - `tf2.sif` : singularity image for tensorflow and keras
  
- 
-# DLI X Lab for KSCSE
- - site : [courses.nvidia.com/dli-event](courses.nvidia.com/dli-event)
- - Code : KISTI_DLIXLAB_DR22
- - dashboard : [https://courses.nvidia.com/dashboard](https://courses.nvidia.com/dashboard)
- - contents : [https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/](https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/)
-
-# slack channel  
- - step1. [nv-ai-developer-kr](https://join.slack.com/t/nv-ai-developer-kr/shared_invite/zt-1l2jvw14y-KsO48FuCTQY~RIOH0FIWEw)
- - step2. join  `kscse-ai-bootcamp` channel
- - step3. leave message or question. 
-
-# survey
-we will send the gift after your reply the survey.
-[google form](https://forms.gle/aZdH3Rj7CfBLAAWw9)
-
-# Day2. DLI self paced lab by Dr.Yeji Choi
-- login : [`courses.nvidia.com`](https://courses.nvidia.com/dashboard) 
-- select [Disaster Risk Monitoring Using Satellite Imagery](https://courses.nvidia.com/courses/course-v1:DLI+S-ES-01+V1/)
-- follow instructor's guide 
-
-# Day2. multi node DL training by Dr. Hwang
-[Dr. Hwang's github](https://github.com/hwang2006/KISTI-DL-tutorial-using-horovod)
-
-
 # prepare Day2's environment ( Conda) 
 
 ## conda environment (CentOS) 
