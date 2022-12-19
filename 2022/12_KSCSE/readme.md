@@ -186,7 +186,7 @@ all script is in *`/scratch/kedu49/img_org/`*
  - step3. leave message or question. 
 
 # survey
-we will send the gift after launch DLI X Lab and remain the survey
+we will send the gift after your reply the survey.
 [google form](https://forms.gle/aZdH3Rj7CfBLAAWw9)
 
 # Day2. DLI self paced lab by Dr.Yeji Choi
@@ -196,6 +196,9 @@ we will send the gift after launch DLI X Lab and remain the survey
 
 # Day2. multi node DL training by Dr. Hwang
 [Dr. Hwang's github](https://github.com/hwang2006/KISTI-DL-tutorial-using-horovod)
+
+
+# prepare Day2's environment ( Conda) 
 
 ## conda environment (CentOS) 
 
