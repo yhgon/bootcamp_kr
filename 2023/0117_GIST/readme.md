@@ -9,3 +9,11 @@ by Hyungon Ryu | NVAITC(NVIDIA AI Tech. Center)  Korea
 - date : 17. Jan. 2023 (Tue) 
 - time : 14:00~
 - 
+# LAB environment 
+## Step 1 - open google colab
+## Step 2 - File > Open Menu
+## Step 3 - select github tab
+## Step 4 -  paste `https://github.com/yhgon/bootcamp_kr/blob/main/2023/0117_GIST/GIST_MLP_mixer_.ipynb`
+## Step 5 - !!! copy to my drive !!!!
+## Step 6 - clear output 
+## Step 7 - ready !!!
