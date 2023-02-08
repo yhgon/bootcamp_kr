@@ -10,8 +10,8 @@ https://join.slack.com/t/nv-ai-developer-kr/shared_invite/zt-1owfwptxw-znbwMNukD
 `#aaicon_modulus_bootcamp `
 
 
-# 3. register developer.nvidia.com 
-
+# 3. register developer account 
+http://developer.nvidia.com
 
 # 4. Lab Access 
 https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/course/
