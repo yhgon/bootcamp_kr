@@ -2,7 +2,8 @@
 by Hyungon Ryu
 
 
-# 1. check browser http://websocketstest.courses.nvidia.com/
+# 1. check browser 
+http://websocketstest.courses.nvidia.com/
 
 # 2. join slack channel 
 https://join.slack.com/t/nv-ai-developer-kr/shared_invite/zt-1owfwptxw-znbwMNukDTSYBGsucdwdPQ  
