@@ -14,8 +14,9 @@ https://join.slack.com/t/nv-ai-developer-kr/shared_invite/zt-1owfwptxw-znbwMNukD
 http://developer.nvidia.com
 
 # 4. Lab Access 
-URL : courses.nvidia.com/dli-event
-event code : AAICON_GPUB_AMBASSADOR_FE23
+## URL : courses.nvidia.com/dli-event
+
+## event code : AAICON_GPUB_AMBASSADOR_FE23
 
 https://courses.nvidia.com/courses/course-v1:DLI+X-FX-11+V1/course/
 
