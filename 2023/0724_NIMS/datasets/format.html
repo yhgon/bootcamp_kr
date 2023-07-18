@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html id="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Japan Meteorological Agency | RSMC Tokyo-Typhoon Center | Format of RSMC Best Track Data</title>
+    <script src="https://www.jma.go.jp/jma/jma_top/js/jquery-3.4.1.min.js"></script>
+    <script src="https://www.jma.go.jp/jma/jma_top/js/common.js"></script>
+    <link rel="stylesheet" href="https://www.jma.go.jp/jma/jma_top/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://www.jma.go.jp/jma/jma_top/css/reset.css">
+    <link rel="stylesheet" href="https://www.jma.go.jp/jma/jma_top/css/common.css">
+    <link rel="stylesheet" href="https://www.jma.go.jp/jma/jma_top/css/common_glo.css">
+  </head>
+
+  <body id="areas">
+    <div id="wrap">
+      <!-- header -->
+      <header>
+        <div id="header">
+          <div class="sp-slide">
+            <div id="head01" class="contents-w">
+              <h1>
+                <a href="https://www.jma.go.jp/jma/indexe.html"><img src="https://www.jma.go.jp/jma/jma_top/image/logo.gif" alt=""></a>
+              </h1>
+              <div id="head-right">
+                <ul>
+                  <li>
+                    <div class="head-free-space">
+                      <p><a href="index.html">Japanese</a></p>
+                      <p><a href="https://www.jma.go.jp/jma/kokusai/multi.html">Other Languages</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="head-free-space">
+                      <p class="icons"><a href="https://twitter.com/JMA_bousai" target="_blank"><img src="https://www.jma.go.jp/jma/jma_top/image/twitter_bousai_en.png" alt="JMA Twitter Logo"></a></p>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div id="default-font-size">
+                      <p>Font size</p>
+                      <form id="size-group">
+                        <input type="radio" name="d-s-btn" id="m-size" checked="checked"><label for="m-size">Small</label>
+                        <input type="radio" name="d-s-btn" id="l-size"><label for="l-size">Large</label>
+                      </form>
+                    </div>
+                    <!-- search -->
+                    <div id="gsearch">
+                      <form id="cse-search-box" action="https://google.com/cse">
+                        <input type="hidden" name="cx" value="009950868052057056798:0yrbmp7chwi">
+                        <input type="hidden" name="ie" value="UTF-8">
+                        <input type="text" name="q" style="width: 200px!important"><button type="submit">Search</button>
+                      </form>
+                      <script type="text/javascript" src="https://www.google.com/cse/brand?form=cse-search-box&lang=ja"></script>
+                    </div>
+                    <!-- search end-->
+                  </li>
+                </ul>
+              </div>
+              <p id="head-right-sp"><i class="fas fa-bars fa-2x"></i></p>
+            </div>
+            <nav>
+              <div id="head-navi">
+                <div class="contents-w">
+                  <ul>
+                    <li id="home-a"><a href="https://www.jma.go.jp/jma/indexe.html">Home</a></li>
+                    <li id="data-a"><a href="https://www.jma.go.jp/jma/en/menu.html">Weather/<br>Earthquakes</a></li>
+                    <li id="data-a"><a href="https://www.jma.go.jp/jma/en/Services/indexe_services.html">Services</a></li>
+                    <li id="data-a"><a href="https://www.jma.go.jp/jma/en/Publications/publications.html">Publications/<br>Periodicals</a></li>
+                    <li id="data-a"><a href="https://www.jma.go.jp/jma/en/News/indexe_news.html">News Releases</a></li>
+                    <li id="areas-a"><a href="https://www.jma.go.jp/jma/en/NMHS/indexe_nmhs.html">For NMHSs</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--header end-->
+
+      <!--breadcrumb navigation start-->
+      <div id="main" class="contents-w">
+        <nav id="breadcrumbs">
+          <ul>
+            <li><a href="https://www.jma.go.jp/jma/indexe.html">Home</a></li>
+            <li><a href="https://www.jma.go.jp/jma/en/NMHS/indexe_nmhs.html">For NMHSs</a></li>
+            <li><a href="../RSMC_HP.htm">RSMC Tokyo-Typhoon Center</a></li>
+            <li><a href="../trackarchives.html">Best Track Data</a></li>
+            <li><a href="../besttrack.html">RSMC Best Track Data (Text)</a> 
+            <li>Format of RSMC Best Track Data</li>
+          </ul>
+        </nav>
+        <!--breadcrumb navigation end-->
+
+        <!--contents start-->
+        <div id="main_title">
+          <section>
+            <h2>Format of RSMC Best Track Data</h2>
+          </section>
+        </div>
+
+        <section id="toptable3">
+          <ul>
+            <li><div><h2>1 Header Line for Each Tropical Cyclone</h2></div></li>
+          </ul>
+          <pre>
+    5    10   15   20   25   30   35   40   45   50   55   60   65   70   75   80
+::::+::::|::::+::::|::::+::::|::::+::::|::::+::::|::::+::::|::::+::::|::::+::::|
+AAAAA BBBB  CCC DDDD EEEE F G HHHHHHHHHHHHHHHHHHHH              IIIIIIII
+<br>
+Sample:
+66666 9119  150 0045 9119 0 6             MIRREILE              19920701
+          </pre>
+          <p></p>
+          <br>
+          <p class="format">
+          </p>
+          <pre>
+AAAAA    5 columns     &lt;Indicator&gt; '66666'
+BBBB     4 columns     &lt;International number ID&gt; 
+                          Last two digits of calendar year followed by 2-digit serial 
+                          number ID of the storm of Tropical Storm (TS) intensity or 
+                          greater
+CCC      3 columns     &lt;Number of data lines&gt;
+DDDD     4 columns     &lt;Tropical cyclone number ID&gt;
+                          Serial number ID of the storm of intensity with maximum 
+                          sustained wind speed of 28 kt (near gale) or  greater
+EEEE     4 columns     &lt;International number ID&gt; Replicate BBBB
+F        1 column      &lt;Flag of the last data line&gt; 
+                          0 : Dissipation
+                          1 : Going out of the responsible area of RSMC Tokyo-Typhoon Center
+G        1 column      &lt;Difference between the time of the last data and the time of 
+                          the final analysis&gt; Unit : hour
+H...H   20 columns     &lt;Name of the storm&gt;
+I...I    8 columns     &lt;Date of the latest revision&gt;
+
+
+          </pre>
+          <br>
+          <ul>
+            <li><div><h2>2 Data Lines</h2></div></li>
+          </ul>
+
+          <pre>
+    5    10   15   20   25   30   35   40   45   50   55   60   65   70   75   80
+::::+::::|::::+::::|::::+::::|::::+::::|::::+::::|::::+::::|::::+::::|::::+::::|
+AAAAAAAA BBB C DDD EEEE FFFF     GGG     HIIII JJJJ KLLLL MMMM         P
+<br>
+Sample:
+91092706 002 5 325 1293  935     095     30180 0140 30400 0260         #
+          </pre>
+          <pre>
+A...A    8 columns     &lt;Time of analysis&gt; yymmddhh (UTC)
+BBB      3 columns     &lt;Indicator&gt; '002'
+C        1 column      &lt;Grade&gt; 1 : Not used
+                                     2 : Tropical Depression (TD)
+                                     3 : Tropical Storm (TS)
+                                     4 : Severe Tropical Storm (STS)
+                                     5 : Typhoon (TY)
+                                     6 : Extra-tropical Cyclone (L)
+                                     7 : Just entering into the responsible area of
+                                         RSMC Tokyo-Typhoon Center
+                                     8 : Not used
+                                     9 : Tropical Cyclone of TS intensity or higher
+DDD      3 columns     &lt;Latitude of the center&gt; Unit : 0.1 degree
+EEEE     4 columns     &lt;Longitude of the center&gt; Unit : 0.1 degree
+FFFF     4 columns     &lt;Central pressure&gt; Unit : hPa
+GGG      3 columns     &lt;Maximum sustained wind speed&gt; Unit : knot (kt)
+H        1 column      &lt;Direction of the longest radius of 50kt winds or greater&gt;
+                          0 : No direction (Longest radius of 50kt winds is 0)
+                          1 : Northeast (NE)
+                          2 : East (E)
+                          3 : Southeast (SE)
+                          4 : South (S)
+                          5 : Southwest (SW)
+                          6 : West (W)
+                          7 : Northwest (NW)
+                          8 : North (N)
+                          9 : (symmetric circle)
+IIII     4 columns     &lt;The longest radius of 50kt winds or greater&gt;
+                          Unit : nautical mile (nm)
+JJJJ     4 columns     &lt;The shortest radius of 50kt winds or greater&gt;
+                          Unit : nautical mile (nm)
+K        1 column      &lt;Direction of the longest radius of 30kt winds or greater&gt;
+                          0 : No direction (Longest radius of 30kt winds is 0)
+                          1 : Northeast (NE)
+                          2 : East (E)
+                          3 : Southeast (SE)
+                          4 : South (S)
+                          5 : Southwest (SW)
+                          6 : West (W)
+                          7 : Northwest (NW)
+                          8 : North (N)
+                          9 : (symmetric circle)
+LLLL     4 columns     &lt;The longest radius of 30kt winds or greater&gt;
+                          Unit : nautical mile (nm)
+MMMM     4 columns     &lt;The shortest radius of 30kt winds or greater&gt;
+                          Unit : nautical mile (nm)
+P        1 column      &lt;Indicator of landfall or passage&gt;
+                          Landfall or passage over the Japanese islands occurred within 
+                          one hour after the time of the analysis with this indicator.
+
+          </pre>
+          <p>
+            (All data are recorded in the ASCII code.)
+          </p>
+        </section>
+        <!--contents end-->
+
+        <!--footer start-->
+        <!-- footer -->
+      </div>
+
+      <footer>
+        <div id="footer">
+          <nav>
+            <div id="foot-navi">
+              <div class="contents-w">
+                <p><span><a href="https://www.jma.go.jp/jma/en/copyright.html">Legal Notice</a></span></p>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </footer>
+      <!--footer end-->
+    </div>
+  </body>
+</html>
