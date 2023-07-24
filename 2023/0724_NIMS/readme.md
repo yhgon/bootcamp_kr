@@ -14,7 +14,8 @@
 ###  dataset 
 - [JMA best track](https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/besttrack.html)
 - [ECMWF ERA5 dataset](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5)
-- 
+- data copy script
+  `bash /home/hryu-nvidia-com/copy_data.sh`
 ###  Server Access guide 
 ####  NVIDIA hackathon server
  - [PDF file](./NIMS_bootcamp_server_access_guide.pdf)
