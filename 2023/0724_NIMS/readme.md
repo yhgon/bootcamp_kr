@@ -1,5 +1,7 @@
 # 2023 NIMS-KISTI CWO GPU Bootcamp 
 
-- repository for Dockerfile , dataset , FCN code
-
-- 
+- Server Access guide ( NVIDIA hackathon server) 
+- dataset(download guide, ERA5, JMA besttrack)
+- notebook files
+- FCN(FourCastNet) code
+- repository for Dockerfile
