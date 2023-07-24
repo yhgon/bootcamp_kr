@@ -1,0 +1,121 @@
+hryu@x99a:/mnt/workspace/build$ cat Dockerfile.new
+FROM nvidia/cuda:11.7.1-devel-ubuntu20.04
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update
+RUN apt-get install -y bzip2 unzip wget curl libatomic1 ca-certificates libsm6  libgomp1 libsndfile1
+RUN apt-get install -y build-essential git gcc g++ cmake  make binutils gfortran gdb sqlite3
+RUN apt-get install -y libpng-dev libjpeg-dev libtiff-dev libwebp-dev ffmpeg
+RUN apt-get install -y python3.9 python3.9-dev
+RUN apt-get install -y libproj-dev proj-data proj-bin libgeos-dev
+
+WORKDIR /opt
+#ENV CONDA_DIR=/opt/conda
+#RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh   \
+#    && bash Miniconda3-latest-Linux-x86_64.sh -b -p /opt/conda \
+#    && rm -f Miniconda3-latest-Linux-x86_64.sh
+
+#ENV PATH=$CONDA_DIR/bin:$PATH
+
+#RUN conda --version
+RUN apt-get install -y proj-bin
+RUN apt-get install -y  python3-pip
+
+RUN pip install --upgrade pip
+
+WORKDIR /opt
+RUN pip3 install cartopy
+
+
+
+
+RUN pip3 install jupyterlab
+RUN pip3 install Cython
+RUN pip3 install torch==2.0.0+cu117 torchvision==0.15.1+cu117 torchaudio==2.0.1 --index-url https://download.pytorch.org/whl/cu117
+
+#### for fourcastnet
+RUN pip3 install pyproject projects
+RUN apt-get install -y  libopenmpi-dev openmpi-bin openmpi-common
+RUN pip3 install setuptools
+RUN pip3 install mpi4py
+RUN pip3 install h5py  netCDF4 cdsapi wandb ruamel.yaml tqdm timm einops
+RUN pip3 install git+https://github.com/romerojosh/benchy.git
+RUN pip3 install torch-harmonics
+
+# optical flow sdk
+#RUN pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda110
+
+RUN pip3 install scikit-build==0.13.1  ## >=0.13.2 have problem with pip --no-binary
+RUN pip3 install awscli boto botocore boto3 gdown ipympl nbconvert
+RUN pip3 install joblib seaborn dask xarray zarr netcdf4 pyhdf pandas scipy numpy h5py hdf5plugin
+RUN pip3 install pyproj basemap s3fs fsspec basemap petastorm pyresample satpy pyorbital pyspectral pydecorate python-geotiepoints pyninjotiff pycoast
+RUN pip3 install pyshp shapely
+RUN pip3 install monai rdkit-pypi py3Dmol openslide-python cucim gdown SimpleITK   nibabel pytorch-ignite
+
+RUN pip3 install setuptools
+RUN pip3 install llvmlite
+RUN pip3 install --user librosa
+RUN pip3 install nltk spacy sentencepiece
+RUN pip3 install gradio
+RUN pip3 install nemo_toolkit
+RUN pip3 install deepspeed
+RUN pip3 install accelerate
+RUN pip3 install transformers
+RUN pip3 install bitsandbytes
+RUN pip3 install peft
+
+RUN pip3 install --pre jupyterlab==3.5.3
+RUN jupyter serverextension enable --py jupyterlab --sys-prefix
+
+RUN apt-get install -qq libgdal-dev libproj-dev
+RUN pip install --no-binary shapely shapely --force
+RUN pip install cartopy
+
+
+# gpu accelerated opencv
+#WORKDIR /opt
+#RUN git clone https://github.com/opencv/opencv-python
+
+# 4.55.64 May 04 2022
+#WORKDIR /opt/opencv-python
+#RUN git checkout tags/64  # 66
+
+# 6.0 p100 7.0 v100 7.5 t4 8.0 a100/a30 8.6 a2/a10/a16/a40
+#RUN ENABLE_CONTRIB=1 python setup.py bdist_wheel -- -DWITH_OPENCLAMDFFT=OFF -DWITH_OPENCLAMDBLAS=OFF -DWITH_VA_INTEL=OFF -DWITH_OPENCL=OFF  -DWITH_CUDA=ON -DENABLE_FAST_MATH=1 -DCUDA_FAST_MATH=1 -DWITH_CUBLAS=1 -DCUDA_ARCH_BIN='7.0 7.5 8.0 8.6' -- -j 32
+
+#RUN ls -lah /opt/opencv-python/dist/*.whl
+
+#RUN pip install /opt/opencv-python/dist/opencv_contrib_python-4.6.0+fcc900e-cp38-cp38-linux_x86_64.whl # latest 30 june
+#RUN pip install /opt/opencv-python/dist/opencv_contrib_python-4.6.0.66-cp38-cp38-linux_x86_64.whl  #tags/66
+#RUN pip install /opt/opencv-python/dist/opencv_contrib_python-4.5.5.64-cp38-cp38-linux_x86_64.whl  # tags/64
+
+############## end of opencv
+#RUN rm -rf /opt/opencv-python
+
+#WORKDIR /opt
+#RUN git clone https://github.com/SciTools/cartopy.git
+#WORKDIR /opt/cartopy
+#RUN git checkout tags/v0.20.3
+# Uncomment the following to specify non-standard include and library paths
+# python setup.py build_ext -I/path/to/include -L/path/to/lib
+
+#RUN apt-get update
+#RUN apt-get install -y libproj-dev proj-data proj-bin libgeos-dev python3-dev cmake sqlite3
+
+#WORKDIR /tmp
+#RUN curl -sSL https://download.osgeo.org/proj/proj-8.0.0.tar.gz | tar -xvz -C /tmp
+#WORKDIR /tmp/proj-8.0.0
+#RUN ./configure
+#RUN make
+#RUN make install
+
+
+#WORKDIR /opt/cartopy
+#RUN python setup.py install
+
+
+WORKDIR /opt
+
+CMD bash
+
+hryu@x99a:/mnt/workspace/build$
