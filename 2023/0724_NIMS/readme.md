@@ -1,5 +1,6 @@
 # 2023 NIMS-KISTI CWO GPU Bootcamp 
-###  notebook files   click [Start_Here.ipynb](./Start_Here.ipynb) 
+###  notebook files   
+[Start_Here.ipynb](./Start_Here.ipynb) 
 - Introduction FourCastNet
 - JMA besttract dataset
 - ERA5 dataset overview
@@ -7,19 +8,24 @@
 - FCN pre-process
 - FCN inference
 - FCN post-process
-###  FCN(FourCastNet) [code](./codes/FCN)
+###  FCN(FourCastNet) 
+[code](./codes/FCN)
 
-###  dataset(download guide, ERA5, JMA besttrack)
-
+###  dataset 
+- [JMA best track](https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/besttrack.html)
+- [ECMWF ERA5 dataset](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5)
+- 
 ###  Server Access guide 
-####  NVIDIA hackathon server[PDF file](./NIMS_bootcamp_server_access_guide.pdf)
+####  NVIDIA hackathon server
+ - [PDF file](./NIMS_bootcamp_server_access_guide.pdf)
 ####  myKSC (jupyter with docker) 
-custom docker : `hryu01/pytorch:nims_v05`  
-pull command : `docker pull hryu01/pytorch:nims_v05` 
+- custom docker : `hryu01/pytorch:nims_v05`  
+- pull command : `docker pull hryu01/pytorch:nims_v05` 
 
 ### repository for Dockerfile
-[Dockerfile.new](./Dockerfile.new)
-
+ - custom d[Dockerfile](./Dockerfile.new)
+ - 
+example of script 
 ```
 ### guide for cartopy
 RUN apt-get install -qq libgdal-dev libproj-dev
