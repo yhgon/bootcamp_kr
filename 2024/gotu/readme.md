@@ -1,0 +1,37 @@
+
+# TinyLlama 
+
+## message 
+```
+system_role_text = "You are a friendly chatbot who always responds in the style of a professors"
+user_input = "How many helicopters can a human eat in one sitting"
+
+messages = [
+    { "role": "system", "content": f"{system_role_text}", },
+    { "role": "user",   "content": f"{user_input}"},
+]
+
+```
+
+# Modulus 
+
+
+## modulus install
+[getting started guide](https://docs.nvidia.com/deeplearning/modulus/getting-started/index.html)
+
+```
+!pip install nvidia-modulus nvidia-modulus-sym
+!pip install nvidia-modulus[all]
+!pip install quadpy orthopy ndim gdown 
+```
+## example download 
+
+ - example1
+```
+git clone https://github.com/NVIDIA/modulus.git
+```
+
+ - example 2 
+```
+!git clone https://github.com/openhackathons-org/End-to-End-AI-for-Science.git
+```
