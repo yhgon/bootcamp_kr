@@ -51,3 +51,6 @@ def to_markdown(text):
 !git clone https://github.com/openhackathons-org/End-to-End-AI-for-Science.git
 
 ```
+
+[modulus day1 example jupyter ](https://colab.research.google.com/drive/1KXtAS81_QJQ7zhXQgY0nLNhgzlNsILV9?usp=sharing)
+
