@@ -43,10 +43,11 @@ def to_markdown(text):
 
  - example1
 ```
-git clone https://github.com/NVIDIA/modulus.git
+!git clone https://github.com/NVIDIA/modulus.git
 ```
 
  - example 2 
 ```
 !git clone https://github.com/openhackathons-org/End-to-End-AI-for-Science.git
+
 ```
