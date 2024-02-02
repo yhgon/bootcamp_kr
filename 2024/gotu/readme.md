@@ -52,5 +52,14 @@ def to_markdown(text):
 
 ```
 
+```
+import os
+import gdown 
+url = 'https://drive.google.com/uc?id=1IXEGbM3NOO6Dig1sxG1stHubwb09-D2N&export=download'
+output = str(os.path.realpath(os.path.dirname(__file__)))+ '/navier_stokes/dataset.zip'
+gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extractall)
+os.remove(output)
+```
+
 [modulus day1 example jupyter ](https://colab.research.google.com/drive/1KXtAS81_QJQ7zhXQgY0nLNhgzlNsILV9?usp=sharing)
 
