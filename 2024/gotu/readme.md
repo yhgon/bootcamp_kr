@@ -77,7 +77,7 @@ gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extr
 
 ## FCN Pre-trained 
 url = 'https://drive.google.com/uc?id=1oSkK69LGP3DfU2tlH5iaejOh94VNsMDu&export=download'
-output = '/content/example/source_code/fourcastnet/pre_trained.zip' 
+output = '/content/pre_trained.zip' 
 gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extractall)
 #os.remove(output)
 
