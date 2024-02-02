@@ -63,3 +63,22 @@ gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extr
 
 [modulus day1 example jupyter ](https://colab.research.google.com/drive/1KXtAS81_QJQ7zhXQgY0nLNhgzlNsILV9?usp=sharing)
 
+
+# FCN data download
+```
+import gdown
+import os
+
+## FCN Dataset 
+url = 'https://drive.google.com/uc?id=1mSN6eLqPYEo9d9pBjSGzQ-ocLd8itP0P&export=download'
+output = '/content/example/source_code/fourcastnet/dataset.zip'
+gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extractall)
+#os.remove(output)
+
+## FCN Pre-trained 
+url = 'https://drive.google.com/uc?id=1oSkK69LGP3DfU2tlH5iaejOh94VNsMDu&export=download'
+output = '/content/example/source_code/fourcastnet/pre_trained.zip' 
+gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extractall)
+#os.remove(output)
+
+```
