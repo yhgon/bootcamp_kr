@@ -80,5 +80,13 @@ url = 'https://drive.google.com/uc?id=1oSkK69LGP3DfU2tlH5iaejOh94VNsMDu&export=d
 output = '/content/pre_trained.zip' 
 gdown.cached_download(url, output, quiet=False,proxy=None,postprocess=gdown.extractall)
 #os.remove(output)
+```
 
+## yamal file edit 
+- train : `/content/example/source_code/fourcastnet/pre_data/train`
+- test : `/content/example/source_code/fourcastnet/pre_data/test`
+## copy stat data 
+
+```
+!cp -rf /content/example/source_code/fourcastnet/data/stats /content/example/source_code/fourcastnet/pre_data/stats
 ```
