@@ -7,4 +7,4 @@
  
 [img-hhmodel_01.png](hhmodel_01.png)
  
-[jupyter notebook - kscse_2024_cardiac_simulation.ipynb](kscse_2024_cardiac_simulation.ipynb)
+[jupyter notebook - cardiac_simulation.ipynb](cardiac_simulation.ipynb)
