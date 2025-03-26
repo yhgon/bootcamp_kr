@@ -1,6 +1,6 @@
 
 ## environment
-
+I'll explain about how to install GPU accelerated OpenCV with NVIDIA OF SDK
 
 #### 1. install utilities with apt-get install
 ```
@@ -146,6 +146,12 @@ echo "OpenCV build and installation complete. Installed into: $CONDA_PREFIX"
 echo "Verifying OpenCV installation:"
 python -c "import cv2; print(cv2.getBuildInformation())"
 
+```
+
+#### install torch with CUDA 12.6
+
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
 ```
 
 
