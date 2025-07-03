@@ -15,7 +15,7 @@ import os
 
 os.makedirs("model", exist_ok=True)
 links = {
-    "/content/model/Llama-3-1b-instruct.zip": "https://drive.google.com/file/d/1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC/view?usp=sharing",
+    "/content/model/Llama-3-1b-instruct.zip": "https://drive.google.com/uc?id=1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC&confirm=t",
 }
 
 for out, url in links.items():
