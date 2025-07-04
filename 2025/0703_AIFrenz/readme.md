@@ -10,7 +10,9 @@ by Hyungon Ryu | NVIDIA |Sr. Solution Architect
 
 - llama checkpoint link [https://drive.google.com/file/d/1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC/view?usp=sharing]([https://drive.google.com/file/d/1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC/view?usp=sharing](https://drive.google.com/uc?id=1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC&confirm=t))
 
-download 
+
+아래 llama2-7b model url이 정상 작동되도록 수정되었습니다. llama2-7b,  llama3.2-1b 두 모델을 사용하는 것이 가능합니다. (7월 4일 기준), 
+download 3.2-1b 
 ```
 %%time
 # Download Llama-2 checkpoints via gdown
@@ -19,7 +21,7 @@ import os
 
 os.makedirs("model", exist_ok=True)
 links = {
-    "/content/model/Llama-3-1b-instruct.zip": "https://drive.google.com/uc?id=1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC&confirm=t",
+    "/content/model/Llama-3.2-1b-instruct.zip": "https://drive.google.com/uc?id=1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC&confirm=t",
 }
 
 for out, url in links.items():
