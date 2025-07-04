@@ -2,6 +2,8 @@
 end-to-end LLM finetune
 by Hyungon Ryu | NVIDIA |Sr. Solution Architect
 
+colab파일은 google drive로 복사하기를 적용한 후 사용하시기 바랍니다.
+
 - Google Colab Link [https://colab.research.google.com/drive/1RK3dBpa2EqlnOAx9MipAGxLbiPYZNaKy?usp=sharing](https://colab.research.google.com/drive/1RK3dBpa2EqlnOAx9MipAGxLbiPYZNaKy?usp=sharing)
 - Github file link [github](https://github.com/yhgon/bootcamp_kr/raw/refs/heads/main/2025/0703_AIFrenz/llama_chat_finetune_hryu.ipynb)
 
@@ -11,7 +13,8 @@ by Hyungon Ryu | NVIDIA |Sr. Solution Architect
 - llama checkpoint link [https://drive.google.com/file/d/1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC/view?usp=sharing]([https://drive.google.com/file/d/1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC/view?usp=sharing](https://drive.google.com/uc?id=1EWheVNT2GwR9gA5Vb4O-O5xMvIWuWDCC&confirm=t))
 
 
-아래 llama2-7b model url이 정상 작동되도록 수정되었습니다. llama2-7b,  llama3.2-1b 두 모델을 사용하는 것이 가능합니다. (7월 4일 기준), 
+아래 llama2-7b model url이 정상 작동되도록 수정되었습니다. llama2-7b,  llama3.2-1b 두 모델을 사용하는 것이 가능합니다. (7월 4일 기준)
+
 download 3.2-1b 
 ```
 %%time
