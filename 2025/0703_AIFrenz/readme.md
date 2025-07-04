@@ -32,5 +32,5 @@ for out, url in links.items():
 
 unzip
 ```
-!unzip /content/model/Llama-3-1b-instruct.zip -d /content/model
+!unzip /content/model/Llama-3.2-1b-instruct.zip -d /content/model
 ```
