@@ -15,3 +15,9 @@
 !pip install --upgrade    nvidia-physicsnemo-sym --no-build-isolation
 !pip install --upgrade    quadpy orthopy ndim gdown
 ```
+
+# PhysicNemo example 
+```
+!git clone https://github.com/NVIDIA/physicsnemo.git
+!git clone https://github.com/openhackathons-org/End-to-End-AI-for-Science.git
+```
