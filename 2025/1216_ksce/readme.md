@@ -20,4 +20,5 @@
 ```
 !git clone https://github.com/NVIDIA/physicsnemo.git
 !git clone https://github.com/openhackathons-org/End-to-End-AI-for-Science.git
+https://github.com/NVIDIA/physicsnemo-sym/blob/main/examples/README.md
 ```
