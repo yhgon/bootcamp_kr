@@ -4,6 +4,8 @@
 
 # colab.research.google.com  --> 새로운 노트북 --> 노트북 설정 --> T4
 
+# example https://github.com/NVIDIA/physicsnemo/tree/main/examples
+
 # set up
 ```
 %%time
