@@ -22,4 +22,6 @@
 !git clone https://github.com/openhackathons-org/End-to-End-AI-for-Science.git
 https://github.com/NVIDIA/physicsnemo-sym/blob/main/examples/README.md
 ```
+
+colab_jupyter [link](https://colab.research.google.com/drive/1juibukO_gNcIx-dQXefTIqripKniFIPF#scrollTo=BWsjMQGzOjfr)
 # [SIMNET document(pdf)](../../2023/02_AAICON2023)
