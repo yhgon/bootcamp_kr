@@ -8,8 +8,8 @@
 ```
 %%time
 # Below steps are required for PhysicsNeMo-Sym's installation
-!pip install --upgrade  --target=$my_path  nvidia-physicsnemo
-!pip install --upgrade  --target=$my_path  Cython
-!pip install --upgrade  --target=$my_path  nvidia-physicsnemo-sym --no-build-isolation
-!pip install --upgrade  --target=$my_path  quadpy orthopy ndim gdown
+!pip install --upgrade     nvidia-physicsnemo
+!pip install --upgrade    Cython
+!pip install --upgrade    nvidia-physicsnemo-sym --no-build-isolation
+!pip install --upgrade    quadpy orthopy ndim gdown
 ```
