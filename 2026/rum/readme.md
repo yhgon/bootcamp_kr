@@ -8,6 +8,10 @@ Hosted at Yonsei University, Seoul, South Korea (=Republic of Korea). A five‑d
 
 [download jupyter](https://raw.githubusercontent.com/yhgon/bootcamp_kr/refs/heads/main/2026/rum/profile_rum.ipynb)
 
+jupyter url : 
+```
+https://jupyter0-3iuonzq28.brevlab.com/lab/workspaces/auto-T?reset
+```
 
 ```
 cd /labs 
