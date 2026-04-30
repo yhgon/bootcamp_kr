@@ -12,8 +12,16 @@ jupyter url :
 ```
 https://jupyter0-3iuonzq28.brevlab.com/lab/workspaces/auto-T?reset
 ```
+for fortran
+```
+cd /labs 
+!wget -O profile_rum_fortran.ipynb 
+https://raw.githubusercontent.com/yhgon/bootcamp_kr/refs/heads/main/2026/rum/profile_rum_fortran.ipynb
+```
 
+for cpp
 ```
 cd /labs 
 !wget -O profile_rum.ipynb  https://raw.githubusercontent.com/yhgon/bootcamp_kr/refs/heads/main/2026/rum/profile_rum.ipynb
 ```
+
