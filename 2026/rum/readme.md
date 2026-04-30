@@ -5,3 +5,11 @@ Hosted at Yonsei University, Seoul, South Korea (=Republic of Korea). A five‑d
  - Dates: Apr 30 (Thu)  2026
 
  - Venue: Yonsei University, Science Building B102
+
+[download jupyter](https://raw.githubusercontent.com/yhgon/bootcamp_kr/refs/heads/main/2026/rum/profile_rum.ipynb)
+
+
+```
+cd /labs 
+!wget -O profile_rum.ipynb  https://raw.githubusercontent.com/yhgon/bootcamp_kr/refs/heads/main/2026/rum/profile_rum.ipynb
+```
